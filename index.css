@@ -4,6 +4,7 @@
 
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -34,6 +35,14 @@
   width: 100%;
   font-size: 40px;
   font-family: Roboto;
+}
+
+.firma {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
 }
 
 #tooltip {
