@@ -49,6 +49,19 @@ function main() {
     const xAxis = d3.axisBottom(xScale)
     const yAxis = d3.axisLeft(yScale)
     
+   /*Texto eje e info*/
+    svg.append('text')
+      .attr('x', -215)
+      .attr('y', 80)
+      .attr('transform', 'rotate(-90)')
+      .text('Gross Domestic Product')
+  
+    svg.append('text')
+      .attr('x', 600)
+      .attr('y', 540)
+      .attr('class', 'info')
+      .html('More Information: <a href="http://www.bea.gov/national/pdf/nipaguid.pdf" target="blank_">http://www.bea.gov/national/pdf/nipaguid.pdf</a>')
+    
     /*Graficado de ejes*/
     svg.append('g')
       .attr('id','x-axis')
@@ -96,9 +109,4 @@ function main() {
 
   }
 };
-
-
-
-
-d3.select("#circleCustomTooltip")
   
