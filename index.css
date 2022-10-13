@@ -27,6 +27,10 @@
   justify-content: center;
 }
 
+.info {
+  font: 12px sans-serif;
+}
+
 #title {
   height: 50px;
   display: flex;
